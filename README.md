@@ -32,6 +32,7 @@ Figma：https://www.figma.com/file/Ve8hQoFmye5KVOAsTodTSD/todolist-app?node-id=0
 
 ## 同じ環境で構築する場合
 
+
 docker run --rm \
 
     -u "$(id -u):$(id -g)" 1
@@ -40,4 +41,6 @@ docker run --rm \
 
     -w /var /www/html \
     
-    laravelsail/php81-composer: latest composer install --ignore-platform-reqs
+    laravelsail/php81-composer: latest
+    
+    composer install --ignore-platform-reqs
