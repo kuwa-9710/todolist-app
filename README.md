@@ -29,3 +29,11 @@ Figma：https://www.figma.com/file/Ve8hQoFmye5KVOAsTodTSD/todolist-app?node-id=0
 前回のアプリでは、CRUDを全て分けてControllerを作成していましたが、今回はresousesで一括管理できる方法を使用しました。
 簡易的なアプリであればこれで十分だと感じました。
 次に作成するアプリはユーザー登録にも対応させていきたいと思います。
+
+## 同じ環境で構築する場合
+
+docker run --rm \
+    -u "$(id -u):$(id -g)" 1
+    -v $ (pwd): /var /www/html \
+    -w /var /www/html \
+    laravelsail/php81-composer: latest composer install --ignore-platform-reqs
